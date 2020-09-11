@@ -1,4 +1,5 @@
 .about_area{
+    margin-top: 150px;
     .about_image{
         img{
             width: 100%;
@@ -172,9 +173,6 @@
         @include transition(.5s);
         @media #{$mid_device} {
             padding: 60px 20px;
-        }
-        img{
-
         }
         h3{
             font-size: 20px;
