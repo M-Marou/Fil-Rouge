@@ -4268,3 +4268,53 @@ h6 {
       .blog_part .single-home-blog .card ul li span {
         margin-right: 10px;
         font-size: 12px; }
+
+.admin {
+  display: flex;
+  background-color: #f8fdfa;
+  width: 100%;
+  overflow: hidden;
+  margin: auto; }
+  @media (max-width: 900px) {
+    .admin {
+      flex-direction: column; } }
+  .admin .navigator {
+    width: 30%;
+    color: white;
+    background-color: #28ae60;
+    padding: 50px; }
+    @media (max-width: 900px) {
+      .admin .navigator {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap; } }
+    .admin .navigator ul {
+      list-style: none; }
+      @media (max-width: 900px) {
+        .admin .navigator ul {
+          display: flex;
+          flex-wrap: wrap; } }
+      .admin .navigator ul li {
+        margin-bottom: 20px;
+        transition: 0.3s;
+        padding: 10px;
+        border-radius: 10px; }
+        .admin .navigator ul li:hover {
+          background-color: #fff;
+          color: #28ae60; }
+    .admin .navigator h1 {
+      margin-bottom: 60px;
+      color: white; }
+    .admin .navigator a {
+      color: white;
+      font-size: 22px; }
+  .admin .contact_form {
+    padding: 80px; }
+    @media (max-width: 900px) {
+      .admin .contact_form {
+        padding: 10px;
+        padding-top: 40px; } }
+    .admin .contact_form .file-input {
+      font-size: 17px;
+      color: #28ae60; }

@@ -1,60 +1,56 @@
-
-@import 'varriable.scss';
-@import 'mixins.scss';
-@import 'extend';
-@import 'responsive.scss';
-@import 'theme-default.scss';
-@import 'btn';
-@import 'section_title';
-@import 'slick-nav.scss';
-
-
+@import "varriable.scss";
+@import "mixins.scss";
+@import "extend";
+@import "responsive.scss";
+@import "theme-default.scss";
+@import "btn";
+@import "section_title";
+@import "slick-nav.scss";
 
 // header
-@import 'header';
+@import "header";
 
 // slider
-@import 'slider';
+@import "slider";
 
 // about
-@import 'about';
+@import "about";
 
 // counter
-@import 'counter';
+@import "counter";
 
 // gallery
-@import '_gallery';
+@import "_gallery";
 
 // about
-@import 'offers';
+@import "offers";
 // about
-@import 'footer';
+@import "footer";
 
-@import 'bradcam';
+@import "bradcam";
 
-@import 'department';
+@import "department";
 
-@import 'tesmonial';
+@import "tesmonial";
 
-@import 'service';
+@import "service";
 
-@import 'experts';
+@import "experts";
 
-@import 'emergency_contact';
-
+@import "emergency_contact";
 
 // other pages default
 
 // contact
-@import 'contact';
+@import "contact";
 
 // elements
-@import 'elements.scss';
+@import "elements.scss";
 
 // blog
-@import 'blog';
-
+@import "blog";
 
 // blog part
-@import 'blog_part';
+@import "blog_part";
 
+@import "admin";
