@@ -1,3 +1,16 @@
+<?php  ob_start() ?>
+<?php  session_start()?>
+
+<?php
+if(isset($_SESSION['user_id'])){
+
+}else{
+        header('location: index.php');
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
   <head>
@@ -34,6 +47,14 @@
         your experience and security.
       </p>
     <![endif]-->
+
+    <?php  include "includes/db.php";?>
+    <?php 
+
+
+
+?>
+
 
     <!-- header-start -->
     <header>
@@ -91,31 +112,29 @@
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
-                        <li><a class="active" href="index.html">home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="Portfolio.html">Portofolio</a></li>
-                        <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li> -->
-                        <!-- <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                     <li><a href="elements.html">elements</a></li>
-                                                    <li><a href="portfolio_details.html">Portfolio details</a></li>
-                                                </ul>
-                                            </li> -->
-                        <li><a href="contact.html">Contact</a></li>
+                      <li><a class="active" href="index.php">home</a></li>
+                                            <li><a href="about.php">About</a></li>
+                                            <li><a href="Portfolio.php">Portfolio</a></li>
+                                            <li><a href="contact.php">Contact</a></li>
+                        <?php if(isset($_SESSION['user_id'])): ?>
+                                                <li><a href="admin.php">admin</a></li>
+                                                <?php else : ?>
+                                                    <?php endif; ?>
                       </ul>
                     </nav>
                   </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                   <div class="Appointment">
-                    <div class="book_btn d-none d-lg-block">
-                      <a class="popup-with-form" href="#test-form">Login</a>
-                    </div>
+                  <?php if(isset($_SESSION['user_id'])): ?>
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a  href="includes/logout.php" >logout</a>
+                                    </div>
+                                    <?php else : ?>
+                                        <div class="book_btn d-none d-lg-block">
+                                        <a class="popup-with-form" href="#test-form">Login</a>
+                                    </div>
+                                    <?php endif; ?>
                   </div>
                 </div>
                 <div class="col-12">
@@ -152,72 +171,33 @@
         </ul>
       </div>
 
-      <!-- <div class="form-field"> -->
-        <form
-          class="form-contact contact_form"
-          action="contact_process.php"
-          method="post"
-          id="contactForm"
-          novalidate="novalidate"
-        >
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input
-                  class="form-control valid"
-                  name="title"
-                  id="title"
-                  type="text"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Title'"
-                  placeholder="Title"
-                />
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input
-                  class="form-control valid"
-                  name="link"
-                  id="link"
-                  type="text"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Link'"
-                  placeholder="Link"
-                />
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <textarea
-                  class="form-control w-100"
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="9"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter Description'"
-                  placeholder=" Description"
-                ></textarea>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <input class="file-input" type="file" id="image" name="image" />
-              </div>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <button type="submit" class="button button-contactForm boxed-btn">
-              Post
-            </button>
-          </div>
-        </form>
-      <!-- </div> -->
-    </div>
+<div>
+      <?php
+if(isset($_GET['source'])){
+
+    $source = $_GET['source'];
+
+}else{
+    $source = '';
+}
+switch ($source ) {
+
+        case 'add_project':
+            include 'includes/add-project.php';
+        break;
+        
+    default:
+        include 'includes/all-project.php';
+        break;
+}
+
+?>
+  </div>    
+
+      </div>
 
     <!-- footer start -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="row">
@@ -299,15 +279,13 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--/ footer end  -->
 
 

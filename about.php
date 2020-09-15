@@ -1,3 +1,4 @@
+<?php  session_start()?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -63,7 +64,7 @@
             </div>
             <div id="sticky-header" class="main-header-area">
                 <div class="container">
-                    <div class="header_bottom_border">
+                    <div class="header_bottom_border white_border">
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
@@ -76,31 +77,29 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="index.html">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="Portfolio.html">Portfolio</a></li>
-                                            <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li> -->
-                                            <!-- <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                     <li><a href="elements.html">elements</a></li>
-                                                    <li><a href="portfolio_details.html">Portfolio details</a></li>
-                                                </ul>
-                                            </li> -->
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a class="active" href="index.php">home</a></li>
+                                            <li><a href="about.php">About</a></li>
+                                            <li><a href="Portfolio.php">Portfolio</a></li>
+                                            <li><a href="contact.php">Contact</a></li>
+                                            <?php if(isset($_SESSION['user_id'])): ?>
+                                                <li><a href="admin.php">admin</a></li>
+                                                <?php else : ?>
+                                                    <?php endif; ?>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
+                                <?php if(isset($_SESSION['user_id'])): ?>
                                     <div class="book_btn d-none d-lg-block">
+                                        <a  href="includes/logout.php" >logout</a>
+                                    </div>
+                                    <?php else : ?>
+                                        <div class="book_btn d-none d-lg-block">
                                         <a class="popup-with-form" href="#test-form">Login</a>
                                     </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -114,14 +113,13 @@
         </div>
     </header>
     <!-- header-end -->
-
     <!-- bradcam_area  -->
-    <div class="bradcam_area breadcam_bg_2">
+    <div class="bradcam_area bradcam_bg_1">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>Portfolio</h3>
+                        <h3>About Us</h3>
                     </div>
                 </div>
             </div>
@@ -129,31 +127,55 @@
     </div>
     <!--/ bradcam_area  -->
 
+<!-- about  -->
+<div class="about_area">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="about_image">
+                    <img src="img/about/about.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="about_info">
+                    <h3>Hi, I am Maroune Moumni</h3>
+                    <p>Hi ! My name is Marouane. I'm a web developer, graphic & 3d designer . <br> I have many years of experiences as a designer. I'm looking for a fun <br> and challenging project. I'm looking forward to bring you an interesting <br> visual solution.                        
+                        </p>
+                    <p>I work quickly and efficiently while producing high quality <br> work that my clients can be proud to show. I create websites & I design <br> logos, brochures, banners, book covers, apps, and everything in between.<br></p>
+                    <p>I have one year of experience in 3D modeling through creating models <br> for game development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ about  -->
 
-    <!-- gallery -->
-    <section class="blog_area section-padding">
+    <!-- counter  -->
+    <div class="counter_area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    <div class="blog_left_sidebar">
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_1.png" alt="">
-                            </div>
-
-                            <div class="blog_details">
-                                    <h2>Web Development</h2>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
-                                <a href="#" class="genric-btn success">Go to Project</a>
-                            </div>
-                        </article>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3> <span class="counter" >183</span> <span>+</span> </h3>
+                        <span>Total Projects</span>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3> <span class="counter" >5</span>  </h3>
+                        <span>On Going Projects</span>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3> <span class="counter" >95</span> <span>%</span> </h3>
+                        <span>Job Success</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--/ gallery -->
+    </div>
+    <!--/ counter  -->
 
     <!-- project  -->
     <div class="project_area">
@@ -268,7 +290,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-    <form id="test-form" class="white-popup-block mfp-hide">
+    <form id="test-form" action='includes/login.php' method='post' class="white-popup-block mfp-hide">
         <div class="popup_box ">
             <div class="popup_inner">
                 <div class="popup_header">
@@ -277,13 +299,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <div class="custom_form">
                         <div class="row">
                                 <div class="col-xl-12">
-                                    <input type="text" placeholder="Username">
+                                    <input type="text" name='username' placeholder="Username">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="email" placeholder="Password">
+                                    <input type="password" name='password' placeholder="Password">
                                 </div>
                                 <div class="col-xl-12">
-                                    <button type="submit" class="boxed-btn3">Login</button>
+                                    <button name='login_user'  type="submit" class="boxed-btn3">Login</button>
                                 </div>
                             </div>
                 </div>
