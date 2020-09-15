@@ -19,7 +19,7 @@
   .navigator {
     width: 30%;
     color: white;
-    background-color: #28ae60;
+    background-color: #828bb2;
     padding: 50px;
     @include mq(900px) {
       display: flex;
@@ -40,7 +40,7 @@
         border-radius: 10px;
         &:hover {
           background-color: #fff;
-          color: #28ae60;
+          color: #828bb2;
         }
       }
     }
@@ -65,7 +65,7 @@
 
     .file-input {
       font-size: 17px;
-      color: #28ae60;
+      color: #828bb2;
     }
   }
 }

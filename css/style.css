@@ -290,16 +290,16 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #28AE60;
+  border: 1px solid #828bb2;
   letter-spacing: 3px;
   text-align: center;
-  color: #28AE60 !important;
+  color: #828bb2 !important;
   text-transform: uppercase;
   cursor: pointer; }
   .boxed-btn:hover {
-    background: #28AE60;
+    background: #828bb2;
     color: #fff !important;
-    border: 1px solid #28AE60; }
+    border: 1px solid #828bb2; }
   .boxed-btn:focus {
     outline: none; }
   .boxed-btn.large-width {
@@ -307,7 +307,7 @@ h3 {
 
 .boxed-btn3 {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-  background: #28AE60;
+  background: #828bb2;
   color: #fff;
   display: inline-block;
   padding: 14px 27px;
@@ -328,7 +328,7 @@ h3 {
   cursor: pointer;
   letter-spacing: 2px; }
   .boxed-btn3:hover {
-    background: #28AE61;
+    background: #828bb2;
     color: #fff !important; }
   .boxed-btn3:focus {
     outline: none; }
@@ -357,7 +357,7 @@ h3 {
   cursor: pointer;
   letter-spacing: 2px; }
   .boxed-btn3-white:hover {
-    background: #28AE61;
+    background: #828bb2;
     color: #fff !important;
     border: 1px solid transparent; }
   .boxed-btn3-white i {
@@ -368,14 +368,14 @@ h3 {
     width: 220px; }
 
 .boxed-btn3-green-2 {
-  color: #28AE60 !important;
+  color: #828bb2 !important;
   display: inline-block;
   padding: 14px 31px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #28AE60;
+  border: 1px solid #828bb2;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -388,7 +388,7 @@ h3 {
   cursor: pointer;
   letter-spacing: 2px; }
   .boxed-btn3-green-2:hover {
-    background: #28AE60;
+    background: #828bb2;
     color: #fff !important;
     border: 1px solid transparent; }
   .boxed-btn3-green-2:focus {
@@ -505,9 +505,9 @@ h3 {
   top: 11px; }
   .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #28AE60; }
+    color: #828bb2; }
   .slicknav_menu .slicknav_nav a.active {
-    color: #28AE60; }
+    color: #828bb2; }
   @media (max-width: 767px) {
     .slicknav_menu .slicknav_nav a i {
       display: none; } }
@@ -651,7 +651,7 @@ h3 {
           .header-area .main-header-area .Appointment .book_btn {
             margin-left: 0; } }
         .header-area .main-header-area .Appointment .book_btn a {
-          background: #28AE60;
+          background: #828bb2;
           padding: 12px 26px;
           font-size: 14px;
           font-weight: 400;
@@ -664,9 +664,9 @@ h3 {
             .header-area .main-header-area .Appointment .book_btn a {
               padding: 12px 20px; } }
           .header-area .main-header-area .Appointment .book_btn a:hover {
-            background: #28AE60;
+            background: #828bb2;
             color: #fff;
-            border: 1px solid #28AE60; }
+            border: 1px solid #828bb2; }
     .header-area .main-header-area .main-menu {
       text-align: center;
       padding: 12px 0; }
@@ -705,7 +705,7 @@ h3 {
             opacity: 1;
             transform: scaleX(1); }
           .header-area .main-header-area .main-menu ul li a:hover {
-            color: #28AE60; }
+            color: #828bb2; }
         .header-area .main-header-area .main-menu ul li .submenu {
           position: absolute;
           left: 0;
@@ -780,7 +780,7 @@ h3 {
       color: #fff;
       margin-right: 12px; }
       .header-area .header-top_area .social_media_links a:hover {
-        color: #28AE60; }
+        color: #828bb2; }
     .header-area .header-top_area .short_contact_list {
       text-align: right; }
       @media (max-width: 767px) {
@@ -797,7 +797,7 @@ h3 {
               margin-left: 0;
               margin: 0 5px; } }
           .header-area .header-top_area .short_contact_list ul li a i {
-            color: #28AE60;
+            color: #828bb2;
             margin-right: 7px; }
 
 .header_bottom_border {
@@ -1705,14 +1705,14 @@ h3 {
         color: #B2B2B2;
         font-weight: 400; }
         .footer .footer_top .footer_widget p.footer_text a.domain:hover {
-          color: #28AE60;
-          border-bottom: 1px solid #28AE60; }
+          color: #828bb2;
+          border-bottom: 1px solid #828bb2; }
       .footer .footer_top .footer_widget p.footer_text.doanar a {
         font-weight: 500;
         color: #B2B2B2; }
         .footer .footer_top .footer_widget p.footer_text.doanar a:hover {
-          color: #28AE60;
-          border-bottom: 1px solid #28AE60; }
+          color: #828bb2;
+          border-bottom: 1px solid #828bb2; }
         .footer .footer_top .footer_widget p.footer_text.doanar a.first {
           margin-bottom: 10px; }
     .footer .footer_top .footer_widget ul li {
@@ -1722,7 +1722,7 @@ h3 {
       .footer .footer_top .footer_widget ul li a {
         color: #C7C7C7; }
         .footer .footer_top .footer_widget ul li a:hover {
-          color: #28AE60; }
+          color: #828bb2; }
     .footer .footer_top .footer_widget .newsletter_form {
       position: relative;
       margin-bottom: 20px; }
@@ -1745,7 +1745,7 @@ h3 {
         border: none;
         font-size: 14px;
         color: #fff;
-        background: #28AE60;
+        background: #828bb2;
         padding: 10px;
         padding: 0 22px;
         cursor: pointer; }
@@ -1766,7 +1766,7 @@ h3 {
         .footer .copy-right_text .copy_right {
           font-size: 13px; } }
       .footer .copy-right_text .copy_right a {
-        color: #28AE60; }
+        color: #828bb2; }
   .footer .socail_links {
     margin-top: 47px; }
     @media (max-width: 767px) {
@@ -1791,7 +1791,7 @@ h3 {
         line-height: 41px !important; }
         .footer .socail_links ul li a:hover {
           color: #fff !important;
-          background: #28AE60; }
+          background: #828bb2; }
 
 .bradcam_bg_1 {
   background-image: url(../img/banner/bradcam_1.png); }
@@ -2177,7 +2177,7 @@ h3 {
         display: table;
         width: 100%;
         height: 100%;
-        background: #28AE60;
+        background: #828bb2;
         -webkit-transform: translateY(40%);
         -moz-transform: translateY(40%);
         -ms-transform: translateY(40%);
@@ -2579,19 +2579,19 @@ h6 {
       border: 1px solid transparent; }
   .genric-btn.success {
     color: #fff;
-    background: #4cd3e3;
+    background: #828bb2;
     border: 1px solid transparent; }
     .genric-btn.success:hover {
-      color: #4cd3e3;
-      border: 1px solid #4cd3e3;
+      color: #828bb2;
+      border: 1px solid #828bb2;
       background: #fff; }
   .genric-btn.success-border {
-    color: #4cd3e3;
-    border: 1px solid #4cd3e3;
+    color: #828bb2;
+    border: 1px solid #828bb2;
     background: #fff; }
     .genric-btn.success-border:hover {
       color: #fff;
-      background: #4cd3e3;
+      background: #828bb2;
       border: 1px solid transparent; }
   .genric-btn.info {
     color: #fff;
@@ -3015,7 +3015,7 @@ h6 {
     .confirm-switch input:checked + label:after {
       left: 19px; }
     .confirm-switch input:checked + label:before {
-      background: #4cd3e3; }
+      background: #828bb2; }
 
 .primary-checkbox {
   width: 16px;
@@ -3307,19 +3307,6 @@ h6 {
 ============================================================================================ */
 .latest-blog-area .area-heading {
   margin-bottom: 70px; }
-
-.blog_area a {
-  color: #666666 !important;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
-  .blog_area a:hover, .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #28AE60 0%, #28AE60 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
 
 .single-blog {
   overflow: hidden;
@@ -3623,7 +3610,7 @@ h6 {
   .blog_details a {
     color: #ff8b23; }
     .blog_details a:hover {
-      color: #28AE60; }
+      color: #828bb2; }
   .blog_details h2 {
     font-size: 18px;
     font-weight: 600;
@@ -3802,7 +3789,7 @@ h6 {
     color: #888888;
     font-size: 13px; }
     .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-      background: #28AE60;
+      background: #828bb2;
       color: #fff !important;
       -webkit-text-fill-color: #fff;
       text-decoration: none;
@@ -3953,7 +3940,7 @@ h6 {
   .single-post-area .blog-author a {
     display: inline-block; }
     .single-post-area .blog-author a:hover {
-      color: #28AE60; }
+      color: #828bb2; }
   .single-post-area .blog-author p {
     margin-bottom: 0;
     font-size: 15px; }
@@ -4118,6 +4105,9 @@ h6 {
     font-size: 13px;
     color: #777; }
 
+.project_area {
+  background-color: #828bb2; }
+
 /*============ End Blog Single Styles  =============*/
 /**************** blog part css start ****************/
 .blog_part {
@@ -4179,7 +4169,7 @@ h6 {
         .blog_part .single-home-blog .card .card-body {
           padding: 20px; } }
       .blog_part .single-home-blog .card .card-body a {
-        color: #28AE60;
+        color: #828bb2;
         text-transform: uppercase;
         -webkit-transition: 0.8s;
         transition: 0.8s; }
@@ -4197,7 +4187,7 @@ h6 {
         height: 10px;
         top: 5px;
         left: 0;
-        background-color: #28AE60;
+        background-color: #828bb2;
         border-radius: 50%; }
     .blog_part .single-home-blog .card span {
       color: #8a8a8a;
@@ -4281,7 +4271,7 @@ h6 {
   .admin .navigator {
     width: 30%;
     color: white;
-    background-color: #28ae60;
+    background-color: #828bb2;
     padding: 50px; }
     @media (max-width: 900px) {
       .admin .navigator {
@@ -4302,7 +4292,7 @@ h6 {
         border-radius: 10px; }
         .admin .navigator ul li:hover {
           background-color: #fff;
-          color: #28ae60; }
+          color: #828bb2; }
     .admin .navigator h1 {
       margin-bottom: 60px;
       color: white; }
@@ -4317,4 +4307,4 @@ h6 {
         padding-top: 40px; } }
     .admin .contact_form .file-input {
       font-size: 17px;
-      color: #28ae60; }
+      color: #828bb2; }

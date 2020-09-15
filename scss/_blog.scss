@@ -6,20 +6,6 @@
         margin-bottom: 70px;
     }
 }
-.blog_area{
-    a{
-        color: $font_1 !important;
-        text-decoration: none;
-        @include transform_time(.5s);
-        &:hover, :hover{
-            background: -webkit-linear-gradient( 131deg, #28AE60 0%, #28AE60 99%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-decoration: none;
-            @include transform_time(.5s);
-        }
-    }
-}
 
 .single-blog {
     overflow: hidden;
@@ -1496,6 +1482,9 @@
     }
 }
 
+.project_area {
+    background-color: #828bb2;
+}
 
 
 /*============ End Blog Single Styles  =============*/
