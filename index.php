@@ -65,7 +65,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="index.php">
                                         <img src="img/MMlogo.png" alt="">
                                     </a>
                                 </div>
@@ -125,7 +125,7 @@
                                 <p>and i am a web developer, graphic designer & a 3D modeler.<br>
                                     </p>
                                 <div class="video_service_btn">
-                                    <a href="about.html" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                    <a href="about.php" class="boxed-btn3-white"> <i class="fa fa-play"></i>
                                         Check us out</a>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                                 <p>and i am a web developer, graphic designer & a 3D modeler. <br>
                                     </p>
                                 <div class="video_service_btn">
-                                    <a href="about.html" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                    <a href="about.php" class="boxed-btn3-white"> <i class="fa fa-play"></i>
                                         Check us out</a>
                                 </div>
 
@@ -222,7 +222,7 @@
                     <div class="project_info text-center">
                         <h3>Do you Have any Project?</h3>
                         <p>Feel free to contact us anytime!</p>
-                        <a href="contact.html" class="boxed-btn3-white">Contact Us</a>
+                        <a href="contact.php" class="boxed-btn3-white">Contact Us</a>
                     </div>
                 </div>
             </div>
