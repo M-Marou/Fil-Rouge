@@ -3,7 +3,7 @@
 <?php  session_start()?>
 <?php
 
-$message = null ;
+// $message = null ;
 
 
 
@@ -28,9 +28,9 @@ if(!$login){
 }
 
 
-echo(mysqli_num_rows($login));
+// echo(mysqli_num_rows($login));
 
-$message = 'Invalid username and/or password.' ;
+// $message = 'Invalid username and/or password.' ;
 
 
 
@@ -53,11 +53,12 @@ while($row = mysqli_fetch_assoc($login)){
       $_SESSION['lastname'] = $db_user_lastname ;
       $_SESSION['email'] = $db_user_email;
       header('location: ../admin.php');
-  }else{
-    
-      $message = 'Invalid email and/or password.' ;
-      header('location: ../admin.php');
   }
+//   else{
+    
+//       $message = 'Invalid username and/or password.' ;
+//       header('location: ../admin.php');
+//   }
 
 }
 
