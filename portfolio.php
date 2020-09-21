@@ -149,9 +149,10 @@ while($row = mysqli_fetch_assoc($result)){
 
 
 ?>
-
+    
     <!-- gallery -->
-    <section class="blog_area section-padding">
+    <div class="p-4"></div>
+    <section class="blog_area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">

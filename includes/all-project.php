@@ -1,5 +1,5 @@
-<table class='table table-hover' style=' width: 100%' >
-<thead>
+<table class='table table-hover' style='width: 100%' >
+<thead class="thead-dark">
     <tr>
         <th>Id</th>
         <th>Title</th>
