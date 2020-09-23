@@ -1,0 +1,71 @@
+@mixin mq($width) {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+.admin {
+  display: flex;
+  background-color: #f8fdfa;
+  width: 100%;
+  //   border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+  //   margin-top: 70px;
+  //   margin-bottom: 50px;
+  @include mq(900px) {
+    flex-direction: column;
+  }
+
+  .navigator {
+    width: 30%;
+    color: white;
+    background-color: #828bb2;
+    padding: 50px;
+    @include mq(900px) {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    ul {
+      list-style: none;
+      @include mq(900px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        margin-bottom: 20px;
+        transition: 0.3s;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+          background-color: #fff;
+          color: #828bb2;
+        }
+      }
+    }
+
+    h1 {
+      margin-bottom: 60px;
+      color: white;
+    }
+    a {
+      color: white;
+      font-size: 22px;
+    }
+  }
+
+  .contact_form {
+    padding: 80px;
+
+    @include mq(900px) {
+      padding: 10px;
+      padding-top: 40px;
+    }
+
+    .file-input {
+      font-size: 17px;
+      color: #828bb2;
+    }
+  }
+}
