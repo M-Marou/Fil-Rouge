@@ -1,57 +1,22 @@
 <?php
 
-    // $to = "marouane.moumni20@gmail.com";
-    // $from = $_REQUEST['email'];
-    // $name = $_REQUEST['name'];
-    // $subject = $_REQUEST['subject'];
-    // $number = $_REQUEST['number'];
-    // $cmessage = $_REQUEST['message'];
-
-    // $headers = "From: $from";
-	// $headers = "From: " . $from . "\r\n";
-	// $headers .= "Reply-To: ". $from . "\r\n";
-	// $headers .= "MIME-Version: 1.0\r\n";
-	// $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-    // $subject = "You have a message from your Bitmap Photography.";
-
-    // $logo = 'img/logo.png';
-    // $link = '#';
-
-	// $body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
-	// $body .= "<table style='width: 100%;'>";
-	// $body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	// $body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
-	// $body .= "</td></tr></thead><tbody><tr>";
-	// $body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
-	// $body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
-	// $body .= "</tr>";
-	// $body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
-	// $body .= "<tr><td></td></tr>";
-	// $body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
-	// $body .= "</tbody></table>";
-	// $body .= "</body></html>";
-
-    // $send = mail($to, $subject, $body, $headers);
-
-
-	$name = $subject = $email = $message = "";
+	$message = $name = $email = $subject = "";
 	// var_dump($_GET);
 	// exit;
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
    
-    $name = $_POST['name'];
-    $phone = $_POST['subject']; 
-    $email = $_POST['email'];
     $message = $_POST['message'];
+    $name = $_POST['name']; 
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
     $email_from = 'info@portfolio.com';
 
     $email_subject = "New form submission";
 
-    $email_body = "User Name: $name.\n".
-                        "User Number: $subject.\n".
+    $email_body = "User Message: $message.\n".
+                        "User Name: $name.\n".
                             "User Email: $email.\n".
-                                "User Message: $message.\n";
+                                "User Subject: $subject.\n";
 
 
     $to = "marouane.moumni20@gmail.com";
@@ -60,8 +25,35 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     $headers .= "Reply-To: $email \r\n";
     mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: contact.php");
  
+    $conn = new mysqli('localhost','root','','myportfolio');
+    if($conn->connect_error){
+        die('connection Failed: '.$conn->connect_error);
+    } else {
+        $stmt = $conn->prepare("INSERT INTO contact(contName, contEmail, contSubject, contMessage)
+        values(?, ?, ?, ?)");
+        $stmt->bind_param("ssss",$name, $email, $subject, $message);
+        $stmt->execute();
+        // echo"data inserted successfully";
+        $stmt->close();
+        $conn->close();
+    }
+    header("Location: contact.php?mailsend");
 }
+
+
+// if (isset($_POST['submit'])) {
+//     $message = $_POST['message'];
+//     $name = $_POST['name']; 
+//     $email = $_POST['email'];
+//     $subject = $_POST['subject'];
+
+//     $mailto = "marouane.moumni20@gmail.com";
+//     $headers = "From: ".$email;
+//     $txt = "You have recieve an e-mail from ".$name.".\n\n".$message;
+
+//     mail($mailto, $subject, $txt, $headers);
+//     header("Location : contact.php?mailsend");
+// }
+
 ?>

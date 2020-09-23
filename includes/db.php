@@ -1,13 +1,12 @@
 <?php 
 
-$db['db_host'] = 'localhost';
-$db['db_user'] = 'root';
-$db['db_pass'] = '';
-$db['db_name'] = 'myportfolio';
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db_name = 'myportfolio';
 
-foreach($db as $key => $value){
+$connection = new mysqli($host, $user, $pass, $db_name);
 
-    define(strtoupper($key) , $value );
-}
-
-$connection = mysqli_connect( DB_HOST, DB_USER , DB_PASS ,DB_NAME );
+if ($connection->connect_error) {
+    die('Database connection error: ' . $conn->connect_error );
+} 
